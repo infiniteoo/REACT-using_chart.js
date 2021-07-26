@@ -49,6 +49,27 @@ export const Chart = () => {
         }}
         data={data.chartData}
       />
+
+      <Line
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Largest Cities in Massachusetts",
+              font: {
+                size: 25,
+              },
+            },
+            legend: {
+              display: true,
+              position: "bottom",
+            },
+          },
+        }}
+        data={data.chartData}
+      />
+
+      
     </div>
   );
 };
