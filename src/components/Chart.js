@@ -31,7 +31,24 @@ export const Chart = () => {
   });
   return (
     <div className="chart">
-      <Bar data={data.chartData} options={{}} />
+      <Bar
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Largest Cities in Massachusetts",
+              font: {
+                size: 25,
+              },
+            },
+            legend: {
+              display: true,
+              position: "bottom",
+            },
+          },
+        }}
+        data={data.chartData}
+      />
     </div>
   );
 };
