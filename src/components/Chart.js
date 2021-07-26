@@ -54,14 +54,14 @@ export const Chart = () => {
         options={{
           plugins: {
             title: {
-              display: true,
+              display: false,
               text: "Largest Cities in Massachusetts",
               font: {
                 size: 25,
               },
             },
             legend: {
-              display: true,
+              display: false,
               position: "bottom",
             },
           },
@@ -69,7 +69,24 @@ export const Chart = () => {
         data={data.chartData}
       />
 
-      
+      <Pie
+        options={{
+          plugins: {
+            title: {
+              display: false,
+              text: "Largest Cities in Massachusetts",
+              font: {
+                size: 25,
+              },
+            },
+            legend: {
+              display: false,
+              position: "bottom",
+            },
+          },
+        }}
+        data={data.chartData}
+      />
     </div>
   );
 };
